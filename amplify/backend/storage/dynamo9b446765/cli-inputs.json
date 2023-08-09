@@ -1,0 +1,14 @@
+{
+  "resourceName": "dynamo9b446765",
+  "tableName": "cart_order",
+  "partitionKey": {
+    "fieldName": "orderNo",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "orderTime",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
