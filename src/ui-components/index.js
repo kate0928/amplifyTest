@@ -28,6 +28,7 @@ export { default as MyIcon } from "./MyIcon";
 export { default as NavBar } from "./NavBar";
 export { default as NavBarHeader } from "./NavBarHeader";
 export { default as NavBarHeader2 } from "./NavBarHeader2";
+export { default as NavBarHeaderTest } from "./NavBarHeaderTest";
 export { default as NavBarSide } from "./NavBarSide";
 export { default as NoteUI } from "./NoteUI";
 export { default as NoteUICollection } from "./NoteUICollection";

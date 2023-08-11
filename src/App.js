@@ -1,7 +1,7 @@
 
 import './App.css';
 import { useState } from 'react';//這是什麼?-為什麼是從form react?
-import { NavBar,NoteUICollection, CreateNote,UpdateNote} from './ui-components'
+import { NoteUICollection, CreateNote,UpdateNote, NavBarHeaderTest} from './ui-components'
 import { withAuthenticator } from '@aws-amplify/ui-react'
 import { DataStore } from 'aws-amplify'
 
@@ -12,11 +12,11 @@ function App({ signOut }) {
   const [updateNote, setUpdateNote] = useState()
   return (
     <>
-<NavBar
+<NavBarHeaderTest
   marginBottom='20px' width='100%'
   overrides={{
-    Button38464645: { onClick: () => setShowCreateModal(true) },
-    Button38464646: {
+    Button39921537: { onClick: () => setShowCreateModal(true) },
+    Button39921538: {
       onClick: async () => {
         await DataStore.clear()
         signOut()
@@ -24,6 +24,7 @@ function App({ signOut }) {
     }
   }}
 />
+
       <div className='container'>
       <NoteUICollection overrideItems={({ item, idx }) => {
   return {
